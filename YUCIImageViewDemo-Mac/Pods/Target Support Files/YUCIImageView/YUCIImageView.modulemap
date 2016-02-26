@@ -1,0 +1,6 @@
+framework module YUCIImageView {
+  umbrella header "YUCIImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

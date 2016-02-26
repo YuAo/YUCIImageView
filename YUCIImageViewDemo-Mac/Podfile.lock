@@ -1,0 +1,16 @@
+PODS:
+  - YUCIImageView (0.1)
+
+DEPENDENCIES:
+  - YUCIImageView (from `../`)
+
+EXTERNAL SOURCES:
+  YUCIImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YUCIImageView: 9e44d7cb80665937b1034e508163def03a2615e1
+
+PODFILE CHECKSUM: 3f64258fd073355e68ceb71a5687eb0243ac3ae6
+
+COCOAPODS: 1.0.0.beta.3

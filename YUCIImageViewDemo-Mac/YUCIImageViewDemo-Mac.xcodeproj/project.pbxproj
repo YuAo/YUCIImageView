@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D350A1D1C7F042B00BAE668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D350A1C1C7F042B00BAE668 /* AppDelegate.swift */; };
+		9D350A1F1C7F042B00BAE668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D350A1E1C7F042B00BAE668 /* ViewController.swift */; };
+		9D350A211C7F042B00BAE668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D350A201C7F042B00BAE668 /* Assets.xcassets */; };
+		9D350A241C7F042B00BAE668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D350A221C7F042B00BAE668 /* Main.storyboard */; };
+		B4FED0DFFA3BC4F218E60C3A /* Pods_YUCIImageViewDemo_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A6C1EF5F46204CA2EECE30 /* Pods_YUCIImageViewDemo_Mac.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41A49947E76480A06BE623DF /* Pods-YUCIImageViewDemo-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YUCIImageViewDemo-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-YUCIImageViewDemo-Mac/Pods-YUCIImageViewDemo-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		937A93E2A0DA7ED764613F8C /* Pods-YUCIImageViewDemo-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YUCIImageViewDemo-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YUCIImageViewDemo-Mac/Pods-YUCIImageViewDemo-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		9D350A191C7F042B00BAE668 /* YUCIImageViewDemo-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YUCIImageViewDemo-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D350A1C1C7F042B00BAE668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D350A1E1C7F042B00BAE668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D350A201C7F042B00BAE668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D350A231C7F042B00BAE668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D350A251C7F042B00BAE668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A6C1EF5F46204CA2EECE30 /* Pods_YUCIImageViewDemo_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YUCIImageViewDemo_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D350A161C7F042B00BAE668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4FED0DFFA3BC4F218E60C3A /* Pods_YUCIImageViewDemo_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DB3A17D2A7AE6BC3AB8373 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				937A93E2A0DA7ED764613F8C /* Pods-YUCIImageViewDemo-Mac.debug.xcconfig */,
+				41A49947E76480A06BE623DF /* Pods-YUCIImageViewDemo-Mac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90C336A3B09A2396C2A77452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4A6C1EF5F46204CA2EECE30 /* Pods_YUCIImageViewDemo_Mac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D350A101C7F042B00BAE668 = {
+			isa = PBXGroup;
+			children = (
+				9D350A1B1C7F042B00BAE668 /* YUCIImageViewDemo-Mac */,
+				9D350A1A1C7F042B00BAE668 /* Products */,
+				27DB3A17D2A7AE6BC3AB8373 /* Pods */,
+				90C336A3B09A2396C2A77452 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D350A1A1C7F042B00BAE668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D350A191C7F042B00BAE668 /* YUCIImageViewDemo-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D350A1B1C7F042B00BAE668 /* YUCIImageViewDemo-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				9D350A1C1C7F042B00BAE668 /* AppDelegate.swift */,
+				9D350A1E1C7F042B00BAE668 /* ViewController.swift */,
+				9D350A201C7F042B00BAE668 /* Assets.xcassets */,
+				9D350A221C7F042B00BAE668 /* Main.storyboard */,
+				9D350A251C7F042B00BAE668 /* Info.plist */,
+			);
+			path = "YUCIImageViewDemo-Mac";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D350A181C7F042B00BAE668 /* YUCIImageViewDemo-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D350A281C7F042B00BAE668 /* Build configuration list for PBXNativeTarget "YUCIImageViewDemo-Mac" */;
+			buildPhases = (
+				93D690034E43DDF0861084B7 /* Check Pods Manifest.lock */,
+				9D350A151C7F042B00BAE668 /* Sources */,
+				9D350A161C7F042B00BAE668 /* Frameworks */,
+				9D350A171C7F042B00BAE668 /* Resources */,
+				C4C331680F3795B51FC31280 /* Embed Pods Frameworks */,
+				8F5DE9C7962C460CEAB8EF7B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YUCIImageViewDemo-Mac";
+			productName = "YUCIImageViewDemo-Mac";
+			productReference = 9D350A191C7F042B00BAE668 /* YUCIImageViewDemo-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D350A111C7F042B00BAE668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YuAo;
+				TargetAttributes = {
+					9D350A181C7F042B00BAE668 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D350A141C7F042B00BAE668 /* Build configuration list for PBXProject "YUCIImageViewDemo-Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D350A101C7F042B00BAE668;
+			productRefGroup = 9D350A1A1C7F042B00BAE668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D350A181C7F042B00BAE668 /* YUCIImageViewDemo-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D350A171C7F042B00BAE668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D350A211C7F042B00BAE668 /* Assets.xcassets in Resources */,
+				9D350A241C7F042B00BAE668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F5DE9C7962C460CEAB8EF7B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YUCIImageViewDemo-Mac/Pods-YUCIImageViewDemo-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D690034E43DDF0861084B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C331680F3795B51FC31280 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YUCIImageViewDemo-Mac/Pods-YUCIImageViewDemo-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D350A151C7F042B00BAE668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D350A1F1C7F042B00BAE668 /* ViewController.swift in Sources */,
+				9D350A1D1C7F042B00BAE668 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D350A221C7F042B00BAE668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D350A231C7F042B00BAE668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D350A261C7F042B00BAE668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D350A271C7F042B00BAE668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9D350A291C7F042B00BAE668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937A93E2A0DA7ED764613F8C /* Pods-YUCIImageViewDemo-Mac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "YUCIImageViewDemo-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imyuao.YUCIImageViewDemo-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D350A2A1C7F042B00BAE668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A49947E76480A06BE623DF /* Pods-YUCIImageViewDemo-Mac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "YUCIImageViewDemo-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imyuao.YUCIImageViewDemo-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D350A141C7F042B00BAE668 /* Build configuration list for PBXProject "YUCIImageViewDemo-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D350A261C7F042B00BAE668 /* Debug */,
+				9D350A271C7F042B00BAE668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D350A281C7F042B00BAE668 /* Build configuration list for PBXNativeTarget "YUCIImageViewDemo-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D350A291C7F042B00BAE668 /* Debug */,
+				9D350A2A1C7F042B00BAE668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D350A111C7F042B00BAE668 /* Project object */;
+}
