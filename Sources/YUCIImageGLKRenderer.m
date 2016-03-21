@@ -45,7 +45,7 @@
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     glClearColor(0, 0, 0, 0);
     glClear(GL_COLOR_BUFFER_BIT);
-    [self.context drawImage:self.image inRect:self.image.extent fromRect:self.image.extent];
+    [self.context drawImage:self.image inRect:(CGRect){CGPointZero,CGSizeApplyAffineTransform(rect.size, CGAffineTransformMakeScale(self.view.contentScaleFactor, self.view.contentScaleFactor))} fromRect:self.image.extent];
 }
 
 - (void)renderImage:(CIImage *)image {

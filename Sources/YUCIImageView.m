@@ -62,6 +62,11 @@ static CGRect YUCIMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect bou
     [super layoutSubviews];
 #endif
     CGSize imageSize = self.image.extent.size;
+    if (CGSizeEqualToSize(imageSize, CGSizeZero) || CGSizeEqualToSize(self.bounds.size, CGSizeZero)) {
+        [self.renderer renderImage:nil];
+        return;
+    }
+    
     switch (self.imageContentMode) {
         case YUCIImageViewContentModeScaleAspectFill: {
             self.renderer.view.frame = YUCIMakeRectWithAspectRatioInsideRect(imageSize, self.bounds);
@@ -87,7 +92,11 @@ static CGRect YUCIMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect bou
         return;
     }
     _image = image;
-    [self updateContent];
+#if TARGET_OS_IPHONE
+    [self setNeedsLayout];
+#else
+    self.needsLayout = YES;
+#endif
 }
 
 - (void)setImageContentMode:(YUCIImageViewContentMode)imageContentMode {
