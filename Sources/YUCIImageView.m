@@ -69,12 +69,13 @@ static CGRect YUCIMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect bou
     
     switch (self.imageContentMode) {
         case YUCIImageViewContentModeScaleAspectFill: {
-            self.renderer.view.frame = YUCIMakeRectWithAspectRatioInsideRect(imageSize, self.bounds);
+            self.renderer.view.frame = YUCIMakeRectWithAspectRatioFillRect(imageSize, self.bounds);
         }
             break;
         case YUCIImageViewContentModeScaleAspectFit: {
             self.renderer.view.frame = YUCIMakeRectWithAspectRatioInsideRect(imageSize, self.bounds);
         }
+            break;
         case YUCIImageViewContentModeCenter: {
             CGSize viewSize = CGSizeMake(imageSize.width/self.screenScaleFactor, imageSize.height/self.screenScaleFactor);
             self.renderer.view.frame = CGRectMake((CGRectGetWidth(self.bounds) - viewSize.width)/2, (CGRectGetHeight(self.bounds) - viewSize.height)/2, viewSize.width, viewSize.height);
