@@ -48,19 +48,21 @@
 
 @synthesize context = _context;
 
-- (instancetype)initWithOpenGLContext:(NSOpenGLContext *)context {
+- (instancetype)initWithOpenGLContext:(NSOpenGLContext *)openGLContext {
     if (self = [super init]) {
-        if (!context) {
-            context = [[NSOpenGLContext alloc] initWithFormat:[NSOpenGLView defaultPixelFormat] shareContext:nil];
+        if (!openGLContext) {
+            openGLContext = [[NSOpenGLContext alloc] initWithFormat:[NSOpenGLView defaultPixelFormat] shareContext:nil];
         }
-        self.context = [CIContext contextWithCGLContext:context.CGLContextObj
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceSRGB);
+        self.context = [CIContext contextWithCGLContext:openGLContext.CGLContextObj
                                             pixelFormat:nil
-                                             colorSpace:nil
-                                                options:@{kCIContextWorkingColorSpace: CFBridgingRelease(CGColorSpaceCreateWithName(kCGColorSpaceSRGB))}];
+                                             colorSpace:colorSpace
+                                                options:@{kCIContextWorkingColorSpace: (__bridge id)colorSpace}];
+        CGColorSpaceRelease(colorSpace);
         YUCIImageOpenGLView *openGLView = [[YUCIImageOpenGLView alloc] initWithFrame:CGRectZero pixelFormat:[NSOpenGLView defaultPixelFormat]];
         openGLView.renderDelegate = self;
         self.view = openGLView;
-        self.view.openGLContext = context;
+        self.view.openGLContext = openGLContext;
     }
     return self;
 }

@@ -17,7 +17,7 @@
 
 @property (nonatomic,strong,readonly) NSOpenGLView *view;
 
-- (instancetype)initWithOpenGLContext:(NSOpenGLContext *)context NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithOpenGLContext:(NSOpenGLContext *)openGLContext NS_DESIGNATED_INITIALIZER;
 
 @end
 
