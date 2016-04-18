@@ -1,5 +1,5 @@
 PODS:
-  - YUCIImageView (0.1)
+  - YUCIImageView (0.2)
 
 DEPENDENCIES:
   - YUCIImageView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YUCIImageView: 9e44d7cb80665937b1034e508163def03a2615e1
+  YUCIImageView: 044910350e3f1cd3fda900113912df7458d64588
 
 PODFILE CHECKSUM: 3f64258fd073355e68ceb71a5687eb0243ac3ae6
 

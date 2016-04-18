@@ -46,7 +46,7 @@ static CGRect YUCIMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect bou
     [_renderer.view removeFromSuperview];
     _renderer = renderer;
     [self addSubview:_renderer.view];
-    _renderer.view.frame = self.bounds;
+    _renderer.view.frame = CGRectIntegral(self.bounds);
 }
 
 #if !TARGET_OS_IPHONE
@@ -69,20 +69,20 @@ static CGRect YUCIMakeRectWithAspectRatioFillRect(CGSize aspectRatio, CGRect bou
     
     switch (self.imageContentMode) {
         case YUCIImageViewContentModeScaleAspectFill: {
-            self.renderer.view.frame = YUCIMakeRectWithAspectRatioFillRect(imageSize, self.bounds);
+            self.renderer.view.frame = CGRectIntegral(YUCIMakeRectWithAspectRatioFillRect(imageSize, self.bounds));
         }
             break;
         case YUCIImageViewContentModeScaleAspectFit: {
-            self.renderer.view.frame = YUCIMakeRectWithAspectRatioInsideRect(imageSize, self.bounds);
+            self.renderer.view.frame = CGRectIntegral(YUCIMakeRectWithAspectRatioInsideRect(imageSize, self.bounds));
         }
             break;
         case YUCIImageViewContentModeCenter: {
             CGSize viewSize = CGSizeMake(imageSize.width/self.screenScaleFactor, imageSize.height/self.screenScaleFactor);
-            self.renderer.view.frame = CGRectMake((CGRectGetWidth(self.bounds) - viewSize.width)/2, (CGRectGetHeight(self.bounds) - viewSize.height)/2, viewSize.width, viewSize.height);
+            self.renderer.view.frame = CGRectIntegral(CGRectMake((CGRectGetWidth(self.bounds) - viewSize.width)/2, (CGRectGetHeight(self.bounds) - viewSize.height)/2, viewSize.width, viewSize.height));
         }
             break;
         default:
-            self.renderer.view.frame = self.bounds;
+            self.renderer.view.frame = CGRectIntegral(self.bounds);
             break;
     }
     [self updateContent];
@@ -212,6 +212,7 @@ CGAffineTransform YUCIImageRenderingPreferredCIImageTransformFromUIImage(UIImage
 
 #import "YUCIImageMetalRenderer.h"
 #import "YUCIImageGLKRenderer.h"
+#import "YUCIImageOpenGLRenderer.h"
 #import "YUCIImageCoreGraphicsRenderer.h"
 
 id<YUCIImageRenderer> YUCIImageRenderingSuggestedRenderer(void) {
@@ -220,6 +221,10 @@ id<YUCIImageRenderer> YUCIImageRenderingSuggestedRenderer(void) {
     if (device) {
         return [[YUCIImageMetalRenderer alloc] initWithDevice:device];
     }
+#endif
+    
+#if __has_include(<AppKit/AppKit.h>)
+    return [[YUCIImageOpenGLRenderer alloc] initWithOpenGLContext:nil];
 #endif
     
 #if __has_include(<GLKit/GLKView.h>)

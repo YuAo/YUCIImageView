@@ -3,6 +3,7 @@
 #import "YUCIImageCoreGraphicsRenderer.h"
 #import "YUCIImageGLKRenderer.h"
 #import "YUCIImageMetalRenderer.h"
+#import "YUCIImageOpenGLRenderer.h"
 #import "YUCIImageRenderer.h"
 #import "YUCIImageView.h"
 
