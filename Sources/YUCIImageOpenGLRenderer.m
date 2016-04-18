@@ -67,6 +67,10 @@
     return self;
 }
 
+- (instancetype)init {
+    return [self initWithOpenGLContext:nil];
+}
+
 - (void)openGLView:(YUCIImageOpenGLView *)view drawRect:(CGRect)rect {
     glClearColor(0, 0, 0, 0);
     glClear(GL_COLOR_BUFFER_BIT);
