@@ -57,6 +57,9 @@
 - (void)drawInMTKView:(MTKView *)view {
     id<MTLCommandBuffer> commandBuffer = [self.commandQueue commandBuffer];
     id<MTLTexture> outputTexture = self.view.currentDrawable.texture;
+    if (!outputTexture) {
+        return;
+    }
     CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(kCGColorSpaceSRGB);
     [self.context render:self.image
             toMTLTexture:outputTexture
