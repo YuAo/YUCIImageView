@@ -29,8 +29,9 @@
         if (!GLContext) {
             GLContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
         }
+        CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
         self.context = [CIContext contextWithEAGLContext:GLContext
-                                                 options:@{kCIContextWorkingColorSpace: CFBridgingRelease(CGColorSpaceCreateWithName(kCGColorSpaceSRGB))}];
+                                                 options:@{kCIContextWorkingColorSpace: CFBridgingRelease(colorSpaceRef)}];
         self.view = [[GLKView alloc] initWithFrame:CGRectZero context:GLContext];
         self.view.delegate = self;
         self.view.contentScaleFactor = UIScreen.mainScreen.scale;
