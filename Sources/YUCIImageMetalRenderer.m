@@ -44,7 +44,7 @@
         self.view.enableSetNeedsDisplay = YES;
         
         self.context = [CIContext contextWithMTLDevice:self.device
-                                               options:@{kCIContextWorkingColorSpace: CFBridgingRelease(CGColorSpaceCreateWithName(kCGColorSpaceSRGB))}];
+                                               options:@{kCIContextWorkingColorSpace: CFBridgingRelease(CGColorSpaceCreateDeviceRGB())}];
         self.commandQueue = [device newCommandQueue];
     }
     return self;
@@ -57,10 +57,11 @@
 - (void)drawInMTKView:(MTKView *)view {
     id<MTLCommandBuffer> commandBuffer = [self.commandQueue commandBuffer];
     id<MTLTexture> outputTexture = self.view.currentDrawable.texture;
-    if (!outputTexture) {
+    if (!outputTexture)
+    {
         return;
     }
-    CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(kCGColorSpaceSRGB);
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
     [self.context render:self.image
             toMTLTexture:outputTexture
            commandBuffer:commandBuffer
